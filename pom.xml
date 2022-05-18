@@ -24,14 +24,14 @@
       <uniqueVersion>false</uniqueVersion>
       <id>myapp-release</id>
       <name>myapp-release</name>
-      <url>http://ec2-52-91-62-148.compute-1.amazonaws.com:8081/repository/myapp-release/</url>
+      <url>http://172.31.84.78:8081/repository/myapp-release/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>myapp-snapshots</id>
       <name>myapp-snapshots</name>
-      <url>http://ec2-52-91-62-148.compute-1.amazonaws.com:8081/repository/myapp-snapshots/</url>
+      <url>http://172.31.84.78:8081/repository/myapp-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
