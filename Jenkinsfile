@@ -14,7 +14,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                SayHello "DevOps Team"
+              cleanWs()
+                SayHello 'Dev0psTeam'
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
 
