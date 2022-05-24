@@ -1,4 +1,4 @@
-def sayHello(name) {
+def sayHello(String name = 'human') {
     echo "Hello, ${name}."
     echo "Hello, ${name}."
 }
@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 cleaWs()
-                SayHello('Devops Team')
+                SayHello "DevOps Team"
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
 
