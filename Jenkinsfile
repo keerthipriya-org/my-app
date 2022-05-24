@@ -17,7 +17,7 @@ pipeline {
                 cleaWs()
                 SayHello "Devops Team"
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
+                git branch: 'dev', url: 'https://github.com/keerthipriya-org/my-app.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
