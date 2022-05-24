@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
          cleanWs()
-                SayHello 'Jenkins'
+                SayHello('Jenkins')
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
 
