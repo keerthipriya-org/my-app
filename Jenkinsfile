@@ -1,8 +1,3 @@
-def sayHello(String name = 'human') {
-    echo "Hello, ${name}."
-    echo "Hello, ${name}."
-}
-
 pipeline {
     agent {label 'maven-label'}
 
@@ -15,7 +10,6 @@ pipeline {
         stage('Build') {
             steps {
                 cleaWs()
-                SayHello "DevOps Team"
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
 
