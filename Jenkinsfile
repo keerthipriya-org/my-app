@@ -1,4 +1,4 @@
-def sayHello(string name= 'human') {
+def sayHello(name) {
     echo "Hello, ${name}."
     echo "Hello, ${name}."
 }
