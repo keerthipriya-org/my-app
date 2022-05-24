@@ -1,3 +1,4 @@
+@Library('pipeline-library-demo')_
 pipeline {
     agent {label 'maven-label'}
 
@@ -9,7 +10,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-         
+         cleanWs()
+                SayHello 'Jenkins'
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/keerthipriya-org/my-app.git'
 
